@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <style>
+        h1{
+            background-color: #A19292;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            background-color: #A19292;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        td {
+            padding:20px;
+        }
+        .titulo {
+            text-transform:capitalize;
+        }
+        .subtitulo {
+            text-align: left;
+        }
+    </style>
+
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Labelling app</Title>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="4" class="titulo">Labelling app</th>
+            </tr>
+            <tr>
+                <th colspan="3" class="subtitulo">Setup</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <form method = "post" action="/procesar">
+            <label>Ruta del archivo Excel</label><br>
+            <input type="text" name="ruta_excel" style="width: 100%"><br><br>
+            <label>Nombre de la hoja:</label><br>
+            <input type="text" name="hoja_excel"><br><br>
+            <button type="submit">Procesar</button><br><br>
+            <button onclick="window.location.href='/index'">Buscar etiqueta</button>
+        </form>
+    </body>
+</html>

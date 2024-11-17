@@ -1,0 +1,1 @@
+instalar Flask para ejecutar html --> sudo apt install python3-flask

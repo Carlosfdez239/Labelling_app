@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <style>
+        h1{
+            background-color: #A19292;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            background-color: #A19292;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        td {
+            padding:20px;
+        }
+        .titulo {
+            text-transform:capitalize;
+        }
+    </style>
+
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Labelling app</Title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="4" class="titulo">Labelling app</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <form method = "GET" action="label_generator">
+            <label>Lectura del Serial del equipo:</label><br>
+            <input type="text" name="Serial"><br><br>
+            <button type="submit">Buscar</button>
+        </form>
+    </body>
+</html>
